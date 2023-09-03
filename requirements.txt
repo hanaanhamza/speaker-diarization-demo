@@ -1,0 +1,5 @@
+https://github.com/pyannote/pyannote-audio/archive/refs/heads/develop.zip
+ipython==7.34.0
+SpeechRecognition
+pocketsphinx
+pydub
