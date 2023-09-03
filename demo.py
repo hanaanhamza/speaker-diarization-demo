@@ -1,9 +1,3 @@
-# !pip install https://github.com/pyannote/pyannote-audio/archive/refs/heads/develop.zip
-# !pip install ipython==7.34.0
-# !pip install SpeechRecognition
-# !pip install pocketsphinx
-# !pip install pydub
-
 # Importing libraries
 from pyannote.audio import Pipeline
 from pyannote.database.util import load_rttm
@@ -60,9 +54,6 @@ def diarize(input):
     return df
 
 
-
-
-
 def button_click():
     st.header('Speaker diarization demo')
     inp = st.selectbox('Select an audio sample', ['Brooklyn 99', 'Gilmore Girls 01', 'Gilmore Girls 02', 'Home Alone', 'La La Land', 'Love and Other Drugs', 'New Girl 01', 'New Girl 02', 'Notebook', 'The Office 01', 'The Office 02'])
@@ -74,7 +65,6 @@ def button_click():
         st.dataframe(output_df)
 
 
-# default_path="C:/Users/hanaa/Documents/hanan/DUK/SEM2/mini project/data/"
 sample_path="wav/"
 audio_mapping = {'Brooklyn 99':"brooklyn-sample.wav", 
                  'Gilmore Girls 01':"gilmore-01-sample.wav", 
